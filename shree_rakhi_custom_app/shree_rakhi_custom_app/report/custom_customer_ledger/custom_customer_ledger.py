@@ -34,7 +34,7 @@ def get_data(filters):
 			inv.name, inv.customer, inv.customer_name, inv.custom_number_of_carton, 
 			inv.base_total, inv.additional_discount_percentage, inv.discount_amount
 		order by 
-			name Asc""".format(itm_conditions=get_item_conditions(filters)),
+			customer_name, name Asc""".format(itm_conditions=get_item_conditions(filters)),
 			{'from_date':filters.from_date,'to_date':filters.to_date,
 			'customer':filters.customer},as_dict=1)
 					  

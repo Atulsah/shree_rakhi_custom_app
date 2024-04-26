@@ -29,12 +29,6 @@ frappe.query_reports["Custom Customer Ledger"] = {
 			label: __("To Date"),
 			fieldtype: "Date",
 			default: frappe.datetime.get_today(),
-		},
-		{
-			fieldname: "brand",
-			label: __("Brand"),
-			fieldtype: "Link",
-			options: "Brand",
 		}
 	]
 };
